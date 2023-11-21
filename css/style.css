@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 30%;
+    margin-top: 20px;
+}
+
+i{
+    font-size: 50px;
+}
+
+.ticket{
+    background-color: red;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 85px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+}
