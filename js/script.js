@@ -19,10 +19,11 @@ button.addEventListener("click", function(){
 
     if(age < 18){
         finalprice = price - under;
+        document.getElementById("discount").innerHTML = "Applicato sconto under 18 " + "( -" + under.toFixed(2) + "€ )"
     }
     else if(age >= 65){
         finalprice = price - over;
-
+        document.getElementById("discount").innerHTML = "Applicato sconto over 65" + "( -" + over.toFixed(2) + "€ )"
     }
     else{
         finalprice = price;

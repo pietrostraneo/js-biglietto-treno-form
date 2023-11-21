@@ -10,58 +10,97 @@
 </head>
 <body>
     <header>
-        <img src="./img/tr5127t3a0-trenitalia-logo-trenitalia-logo-download-vector.png" alt="logo">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-3 logo justify-content-center d-flex">
+                    <img src="./img/Treno_Frecciarossa_Logo.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-magnifying-glass" style="font-size: 15px;"></i></span>
+                        <input type="search" class="form-control" id="cerca" placeholder="Cerca i treni per le tue destinazioni preferite">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <ul class="d-flex list-unstyled gap-5 text-uppercase text-danger fs-5 justify-content-center fw-bolder mt-3">
+                        <li>home</li>
+                        <li>Prenota</li>
+                        <li>accedi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div class="ticket">
-            <i class="fas fa-ticket"></i>
-            <h2>Prenotazione Biglietto</h2>
-            <input type="number" name="travel" id="km" placeholder="Quanti km vuoi percorrere?" class="form-control mb-2">
-            <input type="text" name="age" id="age" placeholder="Quanti anni hai?" class="form-control mb-2">
-            <button class="btn btn-success" id="test">Calcola</button>
-            <hr>
-            <h3>Il prezzo del tuo biglietto è:</h3>
-            <p id="ticketprice">0.00&euro;</p>
-            <hr>
-            <h4>Inserisci i tuoi dati:</h4>
-            <form action="#">
-                <label for="name">Nome:</label>
-                <input type="text" name="name" id="name" class="form-control mb-2">
-        
-                <label for="surname">Cognome:</label>
-                <input type="text" name="surname" id="surname" class="form-control mb-2">
-        
-                <label for="mail">Indirizzo E-mail:</label>
-                <div class="input-group mb-2">
-                    <span class="input-group-text">@</span>
-                    <input type="email" class="form-control" id="mail">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="ticket">
+                        <i class="fas fa-ticket"></i>
+                        <h2>Prenotazione Biglietto</h2>
+                        <input type="number" name="travel" id="km" placeholder="Quanti km vuoi percorrere?" class="form-control mb-2">
+                        <input type="text" name="age" id="age" placeholder="Quanti anni hai?" class="form-control mb-2">
+                        <button class="btn btn-success" id="test">Calcola</button>
+                        <hr>
+                        <h3>Il prezzo del tuo biglietto è:</h3>
+                        <p id="ticketprice">0.00&euro;</p>
+                        <p id="discount"></p>
+                        <hr>
+                        <h4>Inserisci i tuoi dati:</h4>
+                        <form action="#">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name" class="form-control mb-2">
+                    
+                            <label for="surname">Cognome:</label>
+                            <input type="text" name="surname" id="surname" class="form-control mb-2">
+                    
+                            <label for="mail">Indirizzo E-mail:</label>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text">@</span>
+                                <input type="email" class="form-control" id="mail">
+                            </div>
+                    
+                            <label for="tel">Numero di Telefono:</label>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text"><i class="fas fa-phone" style="font-size: 15px;"></i></span>
+                                <input type="tel" class="form-control" id="tel">
+                            </div>
+                    
+                            <div class="mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Voglio ricevere una copia elettronica del biglietto
+                                </label>
+                            </div>
+                    
+                            <div class="mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Acconsento al trattamento dei dati personali
+                                </label>
+                            </div>
+                    
+                            <input type="submit" value="Prenota" class="btn btn-success">
+                            <input type="reset" value="Annulla" class="btn btn-warning">
+                        </form>
+                    </div>
                 </div>
-        
-                <label for="tel">Numero di Telefono:</label>
-                <div class="input-group mb-2">
-                    <span class="input-group-text"><i class="fas fa-phone" style="font-size: 15px;"></i></span>
-                    <input type="tel" class="form-control" id="tel">
+                <div class="col-7">
+
+                    <!-- Why us -->
+                    <div class="card">
+                        <img src="./img/1023x440_collegamenti-Frecciarossa_03-23.jpg" class="img-fluid" alt="frecciarossa">
+                        <div class="card-body">
+                          <h5 class="card-title">Perchè scegliere Freccia Rossa?</h5>
+                          <p class="card-text">Il Frecciarossa 1000 è l’ultimo modello di treno ad Alta Velocità di Trenitalia. Prodotto interamente in Italia grazie a una partnership fra AnsaldoBreda e Bombardier, il primo ETR 1000 è uscito dagli stabilimenti di Pistoia nel marzo 2013, per poi entrare in esercizio nell’estate del 2014. A giugno 2017, Trenitalia presenta il Frecciarossa 1000 in doppia composizione: una soluzione che consente di raddoppiare l’offerta dei posti disponibili per i viaggiatori.</p>
+                          <a href="#" class="btn btn-danger">Scopri di più</a>
+                        </div>
+                    </div>
                 </div>
-        
-                <div class="mb-2">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Voglio ricevere una copia elettronica del biglietto
-                    </label>
-                </div>
-        
-                <div class="mb-2">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Acconsento al trattamento dei dati personali
-                    </label>
-                </div>
-        
-                <input type="submit" value="Prenota" class="btn btn-success">
-                <input type="reset" value="Annulla" class="btn btn-warning">
-            </form>
+            </div>
         </div>
+        
     </main>
     <script src="./js/script.js" type="text/javascript"></script>
 </body>

@@ -4,14 +4,27 @@
     box-sizing: border-box;
 }
 
-header, main{
+header{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+    border-bottom: 1px solid black;
 }
 
-img{
-    width: 30%;
-    margin-top: 20px;
+.logo img{
+    width: 80%;
+}
+
+li:hover{
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    padding: 20px;
 }
 
 i{
@@ -22,12 +35,11 @@ i{
     background-color: red;
     border: 1px solid black;
     text-align: center;
-    margin-top: 85px;
     padding: 25px;
     border-radius: 20px;
 }
 
-p{
+#ticketprice{
     color: white;
     font-size: 25px;
 }
