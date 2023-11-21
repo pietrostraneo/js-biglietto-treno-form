@@ -19,3 +19,5 @@ Consigli:
 Rispettate le milestone., non andate avanti se non avete completato prima quella precedente.
 Nota:
 Se non vi sentite particolarmente creativi, questa potrebbe essere un’implementazione da seguire per il secondo milestone. Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
+
+ESERCIZIO CONSEGNATO!!
